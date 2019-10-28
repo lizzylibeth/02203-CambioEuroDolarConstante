@@ -26,19 +26,12 @@ public class Main {
     public static void main(String[] args) {
 
         //Constante
-            final double CAMBIO_EURO_DOLAR = 1.0921;
+        final double CAMBIO_EURO_DOLAR = 1.0921;
 
-        //1º MANERA
-            System.out.println("- El cambio de hoy es 1€ por " + CAMBIO_EURO_DOLAR);
+        //Mensaje
+        System.out.printf(Locale.ENGLISH, "El cambio de hoy es 1€ por..: %.3f%n", CAMBIO_EURO_DOLAR);
+        //Al poner Locale.ENGLISH, los números, no salen con la coma sino con el punto
 
-        //2º MANERA
-            System.out.printf(Locale.ENGLISH,"- El cambio de hoy es 1€ por %.3f%n", CAMBIO_EURO_DOLAR);
-                //Al poner Locale.ENGLISH, los números, no salen con la coma sino con el punto
-        
-        
-        
-        
-        
     }//main
 
 }//class
